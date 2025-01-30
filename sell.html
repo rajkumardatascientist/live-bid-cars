@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="/">Live Bid Cars</a>
+            <ul class="nav-links">
+                <li><a href="/cars">Browse</a></li>
+                <li><a href="/sell.html">Sell</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Sell Your Car</h1>
+        <form id="sellCarForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="make">Make:</label>
+                <input type="text" id="make" name="make" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="mileage">Mileage:</label>
+                <input type="number" id="mileage" name="mileage" required>
+            </div>
+            <div class="form-group">
+                <label for="condition">Condition:</label>
+                <input type="text" id="condition" name="condition" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="images">Images:</label>
+                <input type="file" id="images" name="images" multiple accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="videos">Videos:</label>
+                <input type="file" id="videos" name="videos" multiple accept="video/*">
+            </div>
+            <button type="submit">Submit Listing</button>
+            <div id="sellMessage"></div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Live Bid Cars</p>
+        </div>
+    </footer>
+    <script src="/sell.js"></script>
+</body>
+</html>
